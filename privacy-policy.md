@@ -1,6 +1,6 @@
 # Ottr privacy policy
 
-**Last updated:** 24 October 2026  ·  **Version:** 1.0.1 (closed testing)
+**Last updated:** 24 October 2026  ·  **Version:** 1.1 (closed testing)
 
 Ottr is a personal money app for Android. This policy explains what
 information the app handles, where it goes, and how you control it. It is
@@ -23,7 +23,8 @@ section 14. Contact: **ottrsupport@gmail.com**.
   information to our server and on to an AI provider, Anthropic. Sections 4
   and 5 say exactly what. You can use Ottr without Otto, and you can switch
   smart categories off.
-- **No ads, no analytics or tracking tools, and we never sell your data.**
+- **No ads, and we never sell your data.** Anonymous usage statistics are sent
+  only if you switch them on (section 7a).
 - **Ottr is not a bank.** It never asks for your bank login and cannot move
   money. It is not licensed or regulated by the Central Bank of the UAE or any
   other financial regulator.
@@ -33,11 +34,14 @@ section 14. Contact: **ottrsupport@gmail.com**.
 Every entry you add or confirm is stored in the app's database on your phone:
 amount, currency, date, type (expense, income or transfer), category, and any
 name, merchant or note you add. Your categories, budgets, goals, salary,
-payday, recurring bills and settings are stored the same way.
+payday, recurring bills and settings are stored the same way, and so are your
+first name and date of birth if you choose to give them (both optional; Home
+greets you by name). You can change or clear those two in Settings → About you.
 
 It stays on your phone unless you turn on cloud backup (section 6). Your
-goals, salary, payday, recurring bills and Otto conversations are never
-backed up.
+goals, salary, payday, recurring bills, Otto conversations, first name and
+date of birth are never backed up, and your first name and date of birth are
+not sent anywhere.
 
 - Notifications: Ottr can show a notification for each bank alert it captures
   and a spending summary at 9 pm. Both are made on your phone from your
@@ -72,6 +76,16 @@ can record the transaction for you.
   amount in your main currency isn't known yet.
 - Messages that look like one-time passcodes, and anything that is not a
   transaction, are ignored.
+- **Reading bank texts as they arrive (optional).** You can also let Ottr read
+  bank text messages as they arrive, so an alert is captured with its full
+  text even when Android hides the content of its notification. Android asks
+  you first; you can decline, or turn it off later in Android's settings, and
+  notification capture carries on. Ottr looks at each incoming text on your
+  phone only long enough to tell whether it is shaped like a bank alert (an
+  amount with a currency, and not a one-time passcode); anything else is
+  dropped at once and never stored. A bank-shaped text is held briefly on your
+  phone and read there; only texts from a bank you have approved can become
+  entries, the rest are discarded. No message text ever leaves your phone.
 
 ## 3. Finding past transactions (optional, on your phone only)
 
@@ -101,9 +115,11 @@ our own server. Ottr's app does the sums; Otto explains them.
   recurring bills and charges, budgets, goals, and your salary and payday if
   you entered them.
 - **Without you asking**: if you are signed in, the short summary on your Home
-  and Overview screens is written by Otto **at most once a day**, from the same
-  kind of summary totals, the first time one of those screens opens that day.
-  Once a week, Otto also writes a short recap of the past week on Home, from
+  and Overview screens is written by Otto **once a day**, from the same kind of
+  summary totals, the first time one of those screens opens that day. On Home
+  it is also written again each time you tap refresh on the card (up to 3
+  times a day), and only while the Otto summary card is shown: remove the card
+  and nothing is sent for it. Once a week, Otto also writes a short recap of the past week on Home, from
   that week's totals by category and your budgets.
 - **Never sent**: the wording of any bank alert or text message, your
   individual transactions, your email address or password.
@@ -115,6 +131,11 @@ our own server. Ottr's app does the sums; Otto explains them.
   for misuse) and does not use it to train its models.
 - Otto can be wrong. It does not give financial advice, and nothing in your
   records changes unless you tap to apply a suggestion.
+- **Reporting an answer**: if Otto says something wrong, offensive or
+  harmful, tap "Report this answer" under it. We receive that answer, the
+  question it replied to, the reason you choose, a note if you add one, and
+  your account number, so we can look into it. Reports are kept on our server
+  until your account is deleted.
 
 ## 5. Smart categories (on by default; you can switch it off)
 
@@ -148,7 +169,8 @@ up until you choose, and you can change it in Settings.
 - **Backed up**: your entries (whether you confirmed them or Ottr filed them),
   categories, budgets and main currency.
 - **Never backed up**: bank-alert or message text, goals, salary and payday,
-  recurring bills, Otto conversations, and device settings such as app lock.
+  recurring bills, Otto conversations, your first name and date of birth, and
+  device settings such as app lock.
 - Each backup is private to its account. The database is set up so that one
   account cannot read another's data, and we test this.
 - To create an account we collect your **email address** and a password. Our
@@ -163,14 +185,38 @@ website, the service sees the network address the request comes from. It
 receives no other information about you, and we have no other relationship
 with it.
 
+## 7a. Usage statistics (only if you say yes)
+
+Ottr asks whether you want to share anonymous usage statistics. It is off
+until you switch it on, and you can switch it off at any time in Settings →
+Privacy. Saying no changes nothing else in the app.
+
+- **Sent, if you say yes**: when the app is opened, which screens you open,
+  which onboarding steps you complete or skip, when you add an entry by hand,
+  and when you send Otto a message (its length range, never its words). Each
+  event carries a random code created by the app and basic facts about the
+  phone and the app (make and model, Android version, screen size, Ottr
+  version). Not your phone's language or time zone.
+- **Never sent**: amounts, shop or merchant names, categories you name, notes,
+  bank-alert text, your Otto messages, your email, name or date of birth.
+- The random code is not your account and is not linked to it. Switching
+  statistics off, or signing out, throws the code away; a new one is made if
+  you switch them on again.
+- The statistics go to **PostHog**, which stores them in the **European Union
+  (Germany)**. Like any website, it sees the network address the request comes
+  from; we have set it not to store that address or a location worked out from
+  it.
+
 ## 8. Who handles your data for us
 
 - **Supabase**: stores your backup and account, and runs our server. Our
   database is hosted in **Tokyo, Japan**.
 - **Anthropic**, in the **United States**: writes Otto's answers and
   identifies kinds of shops, only as described in sections 4 and 5.
+- **PostHog**, in the **European Union (Germany)**: receives anonymous usage
+  statistics, only if you switch them on (section 7a).
 
-Both work on our behalf and under our instructions.
+All three work on our behalf and under our instructions.
 
 The app also downloads exchange rates directly from **ExchangeRate-API**, a
 public rate service (section 7). It is not one of our providers and we have no
@@ -194,7 +240,8 @@ legal or similar effect; you can change every entry.
 ## 9. What we don't do
 
 - No advertising, and no advertising code in the app.
-- No analytics or tracking tools.
+- No tracking for advertising, and no usage statistics unless you switch them
+  on (section 7a).
 - We don't sell your data or share it with anyone for their own use.
 - We don't build marketing profiles.
 - We don't use your data to train AI models, and neither does Anthropic
@@ -209,6 +256,8 @@ legal or similar effect; you can change every entry.
 | Bank-alert and message text | Not kept; discarded once read (up to 7 days in the on-phone queue if Ottr couldn't run) |
 | Otto conversations | On your phone until you clear them or delete the app |
 | Daily request counts | Deleted with your account |
+| Reports about Otto's answers | Until your account is deleted |
+| Usage statistics (if you switched them on) | Up to 12 months, then deleted. They carry only the random code, so we cannot find yours from your account; switching them off stops new ones |
 | Requests sent to Anthropic (Otto, smart categories) | Deleted by Anthropic within 30 days, longer only if flagged for misuse |
 | The shared list of shops | Kept; it holds nothing about any user |
 | Your votes on shops | **Kept after your account is deleted**, under the code described in section 5. Once your account is gone, that code can no longer be linked to you, so the votes no longer point to anyone; they keep the shared shop list useful for everyone |
