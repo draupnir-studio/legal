@@ -1,6 +1,6 @@
 # Ottr privacy policy
 
-**Last updated:** 23 October 2026  ·  **Version:** 1.0 (closed testing)
+**Last updated:** 24 October 2026  ·  **Version:** 1.0.1 (closed testing)
 
 Ottr is a personal money app for Android. This policy explains what
 information the app handles, where it goes, and how you control it. It is
@@ -38,6 +38,12 @@ payday, recurring bills and settings are stored the same way.
 It stays on your phone unless you turn on cloud backup (section 6). Your
 goals, salary, payday, recurring bills and Otto conversations are never
 backed up.
+
+- Notifications: Ottr can show a notification for each bank alert it captures
+  and a spending summary at 9 pm. Both are made on your phone from your
+  phone's own entries and show only the amount, the sender or shop, and the
+  category, never the message itself. Nothing is sent anywhere to make them.
+  You can switch either kind off in Android's settings for Ottr.
 
 Deleting the app removes this data from your phone.
 
