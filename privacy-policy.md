@@ -1,6 +1,6 @@
 # Ottr privacy policy
 
-**Last updated:** 24 October 2026  ·  **Version:** 1.1 (closed testing)
+**Last updated:** 27 October 2026  ·  **Version:** 1.2 (closed testing)
 
 Ottr is a personal money app for Android. This policy explains what
 information the app handles, where it goes, and how you control it. It is
@@ -175,6 +175,11 @@ up until you choose, and you can change it in Settings.
   account cannot read another's data, and we test this.
 - To create an account we collect your **email address** and a password. Our
   sign-in provider, Supabase, handles them; we never see your password.
+- If you choose **Continue with Google** instead, Google sends us the email
+  address, name and profile-picture link of the Google account you pick. We
+  use the email address to identify your account. Our sign-in provider stores
+  the name and picture link; Ottr does not show or use them. We send Google
+  nothing about your money.
 
 ## 7. Exchange rates
 
@@ -216,7 +221,10 @@ Privacy. Saying no changes nothing else in the app.
 - **PostHog**, in the **European Union (Germany)**: receives anonymous usage
   statistics, only if you switch them on (section 7a).
 
-All three work on our behalf and under our instructions.
+- **Google**, only if you sign in with Continue with Google: confirms who
+  signed in (section 6). It receives nothing about your entries.
+
+All four work on our behalf and under our instructions.
 
 The app also downloads exchange rates directly from **ExchangeRate-API**, a
 public rate service (section 7). It is not one of our providers and we have no
