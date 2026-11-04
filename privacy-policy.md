@@ -1,6 +1,6 @@
 # Ottr privacy policy
 
-**Last updated:** 27 October 2026  ·  **Version:** 1.2 (closed testing)
+**Last updated:** 4 November 2026  ·  **Version:** 1.3 (closed testing)
 
 Ottr is a personal money app for Android. This policy explains what
 information the app handles, where it goes, and how you control it. It is
@@ -111,9 +111,11 @@ our own server. Ottr's app does the sums; Otto explains them.
 
 - **When you ask Otto something**, we send your question, the recent messages
   of that conversation, and a summary of your figures: totals by period and by
-  category, the names of the shops you spend most at with their totals, your
-  recurring bills and charges, budgets, goals, and your salary and payday if
-  you entered them.
+  category, the names of the shops you spend most at with their totals (shops
+  you visited only once are grouped together), the total you have transferred to each of the recipients you send most money to
+  (their name and the total, never a single transfer; people you sent money
+  to only once are grouped together), your recurring bills and charges with
+  their monthly amount (often a single charge), budgets, goals, and your salary and payday if you entered them.
 - **Without you asking**: if you are signed in, the short summary on your Home
   and Overview screens is written by Otto **once a day**, from the same kind of
   summary totals, the first time one of those screens opens that day. On Home
@@ -122,7 +124,8 @@ our own server. Ottr's app does the sums; Otto explains them.
   and nothing is sent for it. Once a week, Otto also writes a short recap of the past week on Home, from
   that week's totals by category and your budgets.
 - **Never sent**: the wording of any bank alert or text message, your
-  individual transactions, your email address or password.
+  other individual transactions or transfers, account, card or IBAN numbers, your
+  email address or password.
 - **Where conversations are kept**: on your phone only. Our server counts how
   many requests each account makes per day, to apply a limit; it does not
   keep your questions or Otto's answers.
@@ -198,7 +201,10 @@ Privacy. Saying no changes nothing else in the app.
 
 - **Sent, if you say yes**: when the app is opened, which screens you open,
   which onboarding steps you complete or skip, when you add an entry by hand,
-  and when you send Otto a message (its length range, never its words). Each
+  when you send Otto a message (its length range, never its words), and,
+  after Ottr sorts your entries, how many it filed automatically, how many it
+  left for you to review and how many stayed uncategorised (counts only, never
+  which entries). Each
   event carries a random code created by the app and basic facts about the
   phone and the app (make and model, Android version, screen size, Ottr
   version). Not your phone's language or time zone.
@@ -235,9 +241,9 @@ All traffic between your phone and these services is encrypted (HTTPS).
 
 **Why your data may leave the UAE, and why we are allowed to handle it.** Your
 backup and account are stored in Japan and Otto's requests are answered in the
-United States. We use Supabase and Anthropic under their terms for business
-customers, which commit them to keeping your data secure and limit what they
-may do with it. By choosing cloud backup, or by using Otto, smart categories
+United States. We have data-processing agreements with Supabase and
+Anthropic, part of their terms for business customers, that require them to
+protect your data and to act only on our instructions. By choosing cloud backup, or by using Otto, smart categories
 or the Home summary, you agree to this. Your account and backup are needed to
 provide the service you asked for, and are your choice. Otto, smart categories
 and the Home summary rest on your consent: switch smart categories off in
