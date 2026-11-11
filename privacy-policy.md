@@ -1,6 +1,6 @@
 # Ottr privacy policy
 
-**Last updated:** 4 November 2026  ·  **Version:** 1.3 (closed testing)
+**Last updated:** 11 November 2026  ·  **Version:** 1.4 (closed testing)
 
 Ottr is a personal money app for Android. This policy explains what
 information the app handles, where it goes, and how you control it. It is
@@ -305,6 +305,22 @@ encrypted by Ottr. Your sign-in session is kept in Android's secure storage.
 Ottr is designed for people living in the UAE. It is for adults aged **18 and
 over** managing their own money. We don't knowingly collect data from anyone
 younger; if you think we have, write to us and we will delete it.
+
+## 13a. Our waiting-list web pages
+
+Our web pages (ottr-app.pages.dev, hindsight-cards.pages.dev and
+hearth-home-dqv.pages.dev) show three app ideas we are testing and let you
+join a waiting list. If you join, we keep your email address, the page you
+joined on, the features you picked, the link you came from and the date. We
+use them only to contact you about the app, and only because you ticked the
+box. They are stored with Supabase in Tokyo, Japan. We keep them until you ask
+us to delete them at ottrsupport@gmail.com, or until we close the list.
+
+The pages are hosted by Cloudflare, which also checks that a visitor is not a
+robot and counts visits without cookies and without identifying anyone. Fonts
+are loaded from Google. Like any website, both see the network address a visit
+comes from. The link that sends you to one of the three pages sets one cookie,
+for 30 days, that only remembers which page you were shown.
 
 ## 14. Ottr is still being tested
 
