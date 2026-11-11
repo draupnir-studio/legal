@@ -1,6 +1,6 @@
 # Ottr privacy policy
 
-**Last updated:** 11 November 2026  ·  **Version:** 1.4 (closed testing)
+**Last updated:** 11 November 2026  ·  **Version:** 1.4.1 (closed testing)
 
 Ottr is a personal money app for Android. This policy explains what
 information the app handles, where it goes, and how you control it. It is
@@ -311,7 +311,8 @@ younger; if you think we have, write to us and we will delete it.
 Our web pages (ottr-app.pages.dev, hindsight-cards.pages.dev and
 hearth-home-dqv.pages.dev) show three app ideas we are testing and let you
 join a waiting list. If you join, we keep your email address, the page you
-joined on, the features you picked, the link you came from and the date. We
+joined on, the features you picked, the link you came from, the kind of device
+you joined from (for example Android or iPhone) and the date. We
 use them only to contact you about the app, and only because you ticked the
 box. They are stored with Supabase in Tokyo, Japan. We keep them until you ask
 us to delete them at ottrsupport@gmail.com, or until we close the list.
